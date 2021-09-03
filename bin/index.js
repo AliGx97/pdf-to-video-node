@@ -11,7 +11,7 @@ const ora = require("ora");
 let spinner;
 const spinnerShape = cliSpinners.moon;
 const {
-  initialDirectories,
+  createDirectories,
   removeDirectory,
 } = require("../utilities/fileManagement");
 const generateImage = require("../utilities/createImage");
@@ -50,7 +50,7 @@ const main = async () => {
   let lang = userInput.lang;
   let paths;
   try {
-    paths = await initialDirectories();
+    paths = await createDirectories();
   } catch (error) {
     console.log(chalk.bold.red(error));
     process.exit(1);
