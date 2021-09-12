@@ -5,7 +5,7 @@
 Install the package globally using -g
 
 ```sh
-npm i -g pdf-to-video-nodejs
+npm i -g pdf-to-video-node
 ```
 
 ### Important Note
