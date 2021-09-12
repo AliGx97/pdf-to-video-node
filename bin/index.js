@@ -52,7 +52,8 @@ const main = async () => {
   try {
     paths = await createDirectories();
   } catch (error) {
-    console.log(chalk.bold.red(error));
+    console.log(chalk.bold.red(error + ", Please rerun the program"));
+    await removeDirectory("./PDF_TO_VIDEO");
     process.exit(1);
   }
   try {
