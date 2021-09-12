@@ -2,13 +2,12 @@ const chalk = require("chalk");
 const fs = require("fs");
 const path = require("path");
 let paths = {};
-//TODO: fs.mkdirSync has no call back at all, correct the code
+
 const createDirectories = async () => {
   return new Promise((resolve, reject) => {
-    if (!fs.existsSync("./PDF_TO_VIDEO")) {
-      fs.mkdirSync("./PDF_TO_VIDEO");
-    }
-    paths.main = "./PDF_TO_VIDEO";
+    let date = new Date().toUTCString();
+    fs.mkdirSync(`./PDF_TO_VIDEO${date}`);
+    paths.main = `./PDF_TO_VIDEO${date}`;
     fs.mkdirSync(`${paths.main}/Images`);
     paths.images = `${paths.main}/Images`;
     fs.mkdirSync(`./PDF_TO_VIDEO/AudioWaves`);
