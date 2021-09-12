@@ -9,7 +9,7 @@ const getPrompts = require("../utilities/userPrompt");
 const cliSpinners = require("cli-spinners");
 const ora = require("ora");
 let spinner;
-const spinnerShape = cliSpinners.moon;
+const spinnerShape = cliSpinners.material;
 const {
   createDirectories,
   removeDirectory,
