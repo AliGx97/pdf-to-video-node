@@ -1,6 +1,6 @@
 {
   "name": "pdf-to-video-nodejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a package that uses CLI to convert pdf pages into a video (sound and text)",
   "main": "bin/index.js",
   "scripts": {
