@@ -103,7 +103,8 @@ const main = async () => {
       spinner: spinnerShape,
       prefixText: chalk.bold.green("Creating Final Video"),
     }).start();
-    let finalVideoPath = `${paths.result}/VideoBook.mp4`;
+    const time = new Date().toLocaleString();
+    let finalVideoPath = `${paths.result}/VideoBook${time}.mp4`;
     await VideosHelper.createFinalVideo(videosPaths, finalVideoPath);
     spinner.stop();
     console.log(
