@@ -10,7 +10,7 @@ const createDirectories = async () => {
     paths.main = `./PDF_TO_VIDEO${date}`;
     fs.mkdirSync(`${paths.main}/Images`);
     paths.images = `${paths.main}/Images`;
-    fs.mkdirSync(`./PDF_TO_VIDEO/AudioWaves`);
+    fs.mkdirSync(`${paths.main}/AudioWaves`);
     paths.waves = `${paths.main}/AudioWaves`;
     fs.mkdirSync(`${paths.main}/AudioMp3s`);
     paths.mp3s = `${paths.main}/AudioMp3s`;
