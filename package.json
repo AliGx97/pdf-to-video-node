@@ -12,6 +12,13 @@
   "keywords": [
     "pdfToVideo"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AliGx97/pdf-to-video-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AliGx97/pdf-to-video-node/issues"
+  },
   "author": "Ali Hasan",
   "license": "ISC",
   "dependencies": {
